@@ -42,7 +42,7 @@ export const DataTables = () => {
               <Input 
                 placeholder="Filter by product name..." 
                 value={search}
-                onChange={(e: any) => setSearch(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
               />
             </div>
             <Button variant="neutral"><Icons.IconDownload size="16" /> Export CSV</Button>

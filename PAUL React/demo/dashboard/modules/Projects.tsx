@@ -14,7 +14,6 @@ import {
   Button,
   Grid
 } from "@paul/ui";
-import * as Icons from "@paul/ui";
 
 export const Projects = () => {
   const tasks = [

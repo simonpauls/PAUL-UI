@@ -15,7 +15,6 @@ import {
   RadioGroup,
   RadioField,
   Label,
-  Text,
   Grid
 } from "@paul/ui";
 
@@ -80,7 +79,7 @@ export const FormBuilder = () => {
             <SelectField 
               label="Role" 
               selectedKey={formData.role} 
-              onSelectionChange={(key: any) => setFormData({...formData, role: key})}
+              onSelectionChange={(key) => setFormData({...formData, role: key as string})}
             >
               <SelectItem id="admin">Admin</SelectItem>
               <SelectItem id="editor">Editor</SelectItem>

@@ -25,15 +25,15 @@ const config: StorybookConfig = {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        "@paul/ui": path.resolve(import.meta.dirname, "../../packages/ui/src/index.ts"),
-        compositions: path.resolve(import.meta.dirname, "../../packages/ui/src/components/compositions"),
-        data: path.resolve(import.meta.dirname, "../src/data"),
-        hooks: path.resolve(import.meta.dirname, "../../packages/ui/src/hooks"),
-        icons: path.resolve(import.meta.dirname, "../../packages/ui/src/icons"),
-         images: path.resolve(import.meta.dirname, "../../packages/ui/src/images"),
-         layout: path.resolve(import.meta.dirname, "../../packages/ui/src/components/layout"),
-        primitives: path.resolve(import.meta.dirname, "../../packages/ui/src/components"),
-        utils: path.resolve(import.meta.dirname, "../../packages/ui/src/utils"),
+        "@paul/ui": path.resolve(__dirname, "../../packages/ui/src/index.ts"),
+        compositions: path.resolve(__dirname, "../../packages/ui/src/components/compositions"),
+        data: path.resolve(__dirname, "../src/data"),
+        hooks: path.resolve(__dirname, "../../packages/ui/src/hooks"),
+        icons: path.resolve(__dirname, "../../packages/ui/src/icons"),
+         images: path.resolve(__dirname, "../../packages/ui/src/images"),
+         layout: path.resolve(__dirname, "../../packages/ui/src/components/layout"),
+        primitives: path.resolve(__dirname, "../../packages/ui/src/components"),
+        utils: path.resolve(__dirname, "../../packages/ui/src/utils"),
       };
     }
 

@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Flex,
-  FlexItem,
   Header,
   Navigation,
   NavigationButton,

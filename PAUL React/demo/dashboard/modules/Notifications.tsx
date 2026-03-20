@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Flex, TextTitlePage, TextSubtitle, Button, Notification, Card, TextHeading, Text } from "@paul/ui";
+import React, { useState, useCallback } from "react";
+import { Flex, TextTitlePage, TextSubtitle, Button, Notification, Card, TextHeading } from "@paul/ui";
 import * as Icons from "@paul/ui";
 
 interface Toast {
@@ -11,16 +11,16 @@ interface Toast {
 export const Notifications = () => {
   const [toasts, setToasts] = useState<Toast[]>([]);
 
-  const addToast = (variant: "message" | "alert") => {
+  const removeToast = useCallback((id: number) => {
+    setToasts(prev => prev.filter(t => t.id !== id));
+  }, []);
+
+  const addToast = useCallback((variant: "message" | "alert") => {
     const id = Date.now();
     const message = variant === "message" ? "Successfully saved!" : "Something went wrong.";
-    setToasts([...toasts, { id, message, variant }]);
+    setToasts(prev => [...prev, { id, message, variant }]);
     setTimeout(() => removeToast(id), 5000);
-  };
-
-  const removeToast = (id: number) => {
-    setToasts(prev => prev.filter(t => t.id !== id));
-  };
+  }, [removeToast]);
 
   return (
     <Flex direction="column" gap="800">

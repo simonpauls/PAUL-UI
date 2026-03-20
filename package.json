@@ -18,7 +18,8 @@
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
-    "publish:ui": "pnpm --filter @paul/ui publish"
+    "publish:ui": "pnpm --filter @paul/ui publish",
+    "chromatic": "pnpm --filter @sirpauls/paul chromatic"
   },
   "devDependencies": {
     "tsup": "^8.5.1",

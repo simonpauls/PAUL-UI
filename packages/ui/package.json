@@ -11,7 +11,9 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify --target es2024",
     "dev": "tsup src/index.ts --format cjs,esm --watch --dts --target es2024",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -22,12 +24,19 @@
     "react-dom": ">=18.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
     "jsdom": "^29.0.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0",
     "vitest": "^4.1.0"
   }
 }

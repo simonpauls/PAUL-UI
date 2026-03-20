@@ -16,7 +16,6 @@ import {
   DialogTrigger,
   DialogModal,
   TextHeading,
-  Text,
   IconButton,
   InputField,
   SelectField,
@@ -99,7 +98,7 @@ export const UserManagement = () => {
               <Input 
                 placeholder="Search users..." 
                 value={searchQuery}
-                onChange={(e: any) => setSearchQuery(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
                 style={{ width: "100%" }}
               />
             </div>

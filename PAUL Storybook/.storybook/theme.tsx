@@ -1,4 +1,4 @@
-import { create } from "storybook/theming";
+import { create } from "@storybook/theming";
 import { getBrandingConfig } from "../../packages/ui/src/utils/branding";
 
 const { brandTitle, brandName } = getBrandingConfig();
