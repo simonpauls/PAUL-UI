@@ -29,10 +29,10 @@ jobs:
       run: pnpm install
 
     - name: Typecheck
-      run: pnpm --filter @paul/react typecheck
+      run: pnpm -r typecheck
 
     - name: Lint
-      run: pnpm --filter @paul/react lint
+      run: pnpm -r lint
 
     - name: Test
-      run: pnpm --filter @paul/react test
+      run: pnpm -r test
