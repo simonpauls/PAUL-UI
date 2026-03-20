@@ -1,0 +1,19 @@
+{
+  "name": "paul-monorepo",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpauls/PAUL-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simonpauls/PAUL-UI/issues"
+  },
+  "homepage": "https://github.com/simonpauls/PAUL-UI#readme",
+  "scripts": {
+    "demo": "pnpm --filter @paul/react demo"
+  }
+}

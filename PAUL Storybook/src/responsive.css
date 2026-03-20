@@ -1,0 +1,37 @@
+/* Responsive default */
+:root {
+  --paul-responsive-display-flex-to-none: flex;
+  --paul-responsive-display-none-to-flex: none;
+  --paul-responsive-ratio-column-full: 1;
+  --paul-responsive-ratio-column-half: 2;
+  --paul-responsive-ratio-column-quarter-major: 4;
+  --paul-responsive-ratio-column-quarter-minor: 4;
+  --paul-responsive-ratio-column-third-major: 3;
+  --paul-responsive-ratio-column-third-minor: 3;
+}
+/* Responsive tablet */
+@media (min-width: 600px) {
+  :root {
+    --paul-responsive-display-flex-to-none: flex;
+    --paul-responsive-display-none-to-flex: none;
+    --paul-responsive-ratio-column-full: 1;
+    --paul-responsive-ratio-column-half: 1;
+    --paul-responsive-ratio-column-quarter-major: 2;
+    --paul-responsive-ratio-column-quarter-minor: 2;
+    --paul-responsive-ratio-column-third-major: 3;
+    --paul-responsive-ratio-column-third-minor: 3;
+  }
+}
+/* Responsive desktop */
+@media (min-width: 1024px) {
+  :root {
+    --paul-responsive-display-flex-to-none: none;
+    --paul-responsive-display-none-to-flex: flex;
+    --paul-responsive-ratio-column-full: 1;
+    --paul-responsive-ratio-column-half: 1;
+    --paul-responsive-ratio-column-quarter-major: 3;
+    --paul-responsive-ratio-column-quarter-minor: 1;
+    --paul-responsive-ratio-column-third-major: 2;
+    --paul-responsive-ratio-column-third-minor: 1;
+  }
+}

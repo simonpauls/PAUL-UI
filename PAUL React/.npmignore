@@ -1,0 +1,39 @@
+# Source and Tests
+src/
+**/__tests__/
+**/*.test.tsx
+**/*.test.ts
+**/*.spec.tsx
+**/*.spec.ts
+setupTests.ts
+
+# Tooling and Configuration
+.github/
+.vscode/
+.husky/
+.scripts/
+.eslint.config.js
+vite.config.ts
+tsconfig.json
+tsconfig.app.json
+tsconfig.node.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+.gitignore
+.prettierrc
+.editorconfig
+
+# Build Artifacts (Only if not using 'files' in package.json, but kept for redundancy)
+node_modules/
+dist/
+coverage/
+*.log
+
+# Documentation and Assets
+public/
+assets/
+CHANGELOG.md
+CONTRIBUTING.md
+.npmignore
+# Note: README.md and LICENSE are automatically included by npm

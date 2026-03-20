@@ -1,0 +1,89 @@
+.dialog-container {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--global-stack-dialog-container);
+}
+
+.dialog-backdrop {
+  backdrop-filter: var(--paul-effects-backdrop-filter-blur-overlay);
+  background: var(--paul-color-background-utilities-scrim);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--global-stack-dialog-backdrop);
+}
+
+.dialog {
+  --dialog-padding-y: var(--paul-size-space-800);
+  background: var(--paul-color-background-default-default);
+  box-shadow: var(--paul-effects-shadows-drop-shadow-400);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--dialog-padding-y);
+  padding-top: var(--dialog-padding-y);
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  .dialog-close {
+    position: absolute;
+    top: var(--paul-size-space-200);
+    right: var(--paul-size-space-200);
+  }
+}
+
+.dialog-type-card {
+  border-radius: var(--paul-size-radius-200);
+  border: var(--paul-size-stroke-border) solid
+    var(--paul-color-border-default-default);
+  max-width: var(--global-dialog-max-width);
+  width: calc(100% - var(--paul-size-space-400) * 2);
+}
+.dialog-type-sheet {
+  align-self: flex-end;
+  border-top: var(--paul-size-stroke-border) solid
+    var(--paul-color-border-default-default);
+  max-width: 100%;
+  width: 100%;
+  padding-left: calc((100% - min(var(--global-container-max-width), 100%)) / 2);
+  padding-right: calc(
+    (100% - min(var(--global-container-max-width), 100%)) / 2
+  );
+}
+
+.dialog-title,
+.dialog-description,
+.dialog .button-group,
+.dialog-body {
+  padding-left: var(--paul-size-space-800);
+  padding-right: var(--paul-size-space-800);
+}
+
+.dialog-body-bleed {
+  margin-left: calc(-1 * var(--paul-size-space-800));
+  margin-right: calc(-1 * var(--paul-size-space-800));
+  --table-gutter-inset: var(--paul-size-space-800);
+}
+
+.dialog .button-group {
+  margin-top: var(--paul-size-space-600);
+}
+
+.dialog-body {
+  margin-top: var(--paul-size-space-600);
+}
+
+.dialog-description {
+  margin-top: var(--paul-size-space-200);
+}
