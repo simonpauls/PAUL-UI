@@ -30,5 +30,6 @@ Example: `feat: add new Button variant`
 2.  Create a new feature branch: `git checkout -b feature/your-feature-name`.
 3.  Commit your changes following the naming convention.
 4.  Push your branch: `git push -u origin feature/your-feature-name`.
-5.  Open a Pull Request (PR) against the `develop` branch.
-6.  Once approved and tests pass, the PR will be merged into `develop`.
+5.  Run Chromatic locally to verify visual changes (optional but recommended): `pnpm chromatic`.
+6.  Open a Pull Request (PR) against the `develop` branch.
+7.  Once approved and tests pass, the PR will be merged into `develop`.
