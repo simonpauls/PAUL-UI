@@ -13,7 +13,6 @@ import { Calendar } from "./modules/Calendar";
 import { FileManagement } from "./modules/FileManagement";
 import { RolesPermissions } from "./modules/RolesPermissions";
 import { Projects } from "./modules/Projects";
-import { Flex, TextHeading, Text } from "@paul/ui";
 
 export const Dashboard = () => {
   return (
