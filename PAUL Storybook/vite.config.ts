@@ -8,14 +8,15 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      compositions: path.resolve(__dirname, "./src/ui/compositions"),
+      "@paul/ui": path.resolve(__dirname, "../packages/ui/src/index.ts"),
+      compositions: path.resolve(__dirname, "../packages/ui/src/components/compositions"),
       data: path.resolve(__dirname, "./src/data"),
-      hooks: path.resolve(__dirname, "./src/ui/hooks"),
-      icons: path.resolve(__dirname, "./src/ui/icons"),
+      hooks: path.resolve(__dirname, "../packages/ui/src/hooks"),
+      icons: path.resolve(__dirname, "../packages/ui/src/icons"),
       images: path.resolve(__dirname, "./src/ui/images"),
-      layout: path.resolve(__dirname, "./src/ui/layout"),
-      primitives: path.resolve(__dirname, "./src/ui/primitives"),
-      utils: path.resolve(__dirname, "./src/ui/utils"),
+      layout: path.resolve(__dirname, "../packages/ui/src/components/layout"),
+      primitives: path.resolve(__dirname, "../packages/ui/src/components"),
+      utils: path.resolve(__dirname, "../packages/ui/src/utils"),
     },
   },
   server: {

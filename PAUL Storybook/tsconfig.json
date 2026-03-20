@@ -15,17 +15,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "@paul/ui": ["../../packages/ui/src/index.ts"],
-      "data": ["./data"],
-      "compositions": ["../../packages/ui/src/components/compositions"],
-      "hooks": ["../../packages/ui/src/hooks"],
-      "icons": ["../../packages/ui/src/icons"],
-      "images": ["../../packages/ui/src/images"],
-      "layout": ["../../packages/ui/src/components/layout"],
-      "primitives": ["../../packages/ui/src/components"],
-      "utils": ["../../packages/ui/src/utils"]
+      "@paul/ui": ["../packages/ui/src/index.ts"],
+      "data": ["./src/data"],
+      "compositions": ["../packages/ui/src/components/compositions"],
+      "hooks": ["../packages/ui/src/hooks"],
+      "icons": ["../packages/ui/src/icons"],
+      "images": ["./src/ui/images"],
+      "layout": ["../packages/ui/src/components/layout"],
+      "primitives": ["../packages/ui/src/components"],
+      "utils": ["../packages/ui/src/utils"]
     }
   },
   "include": ["src", "scripts"]

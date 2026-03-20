@@ -14,6 +14,14 @@
   },
   "homepage": "https://github.com/simonpauls/PAUL-UI#readme",
   "scripts": {
-    "demo": "pnpm --filter @paul/react demo"
+    "demo": "pnpm --filter @paul/react demo",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "publish:ui": "pnpm --filter @paul/ui publish"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }

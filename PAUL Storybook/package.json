@@ -27,8 +27,8 @@
     "storybook": "storybook dev -p 6006 --no-open",
     "storybook:build": "storybook build --output-dir dist/storybook",
     "build-storybook": "pnpm run storybook:build",
-    "build": "pnpm run app:build && pnpm run build-storybook",
-    "chromatic": "chromatic --project-token=chpt_701942709b85b06 --exit-zero-on-changes"
+    "build": "pnpm run build-storybook",
+    "chromatic": "chromatic --project-token=chpt_701942709b85b06 --exit-zero-on-changes --build-script-name=build-storybook"
   },
   "prettier": {
     "plugins": [

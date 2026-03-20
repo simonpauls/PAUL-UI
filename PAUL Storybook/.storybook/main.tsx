@@ -7,7 +7,12 @@ const config: StorybookConfig = {
     "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
 
-  addons: [],
+  addons: [
+    "@storybook/addon-onboarding",
+    "@storybook/addon-essentials",
+    "@chromatic-com/storybook",
+    "@storybook/addon-interactions",
+  ],
 
   framework: {
     name: "@storybook/react-vite",
@@ -16,18 +21,19 @@ const config: StorybookConfig = {
 
   docs: {},
 
-  viteFinal: async (config) => {
+  async viteFinal(config) {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        compositions: path.resolve(import.meta.dirname, "../src/ui/compositions"),
-        hooks: path.resolve(import.meta.dirname, "../src/ui/hooks"),
-        icons: path.resolve(import.meta.dirname, "../src/ui/icons"),
-        images: path.resolve(import.meta.dirname, "../src/ui/images"),
-        layout: path.resolve(import.meta.dirname, "../src/ui/layout"),
-        primitives: path.resolve(import.meta.dirname, "../src/ui/primitives"),
-        providers: path.resolve(import.meta.dirname, "../src/ui/providers"),
-        utils: path.resolve(import.meta.dirname, "../src/ui/utils"),
+        "@paul/ui": path.resolve(import.meta.dirname, "../../packages/ui/src/index.ts"),
+        compositions: path.resolve(import.meta.dirname, "../../packages/ui/src/components/compositions"),
+        data: path.resolve(import.meta.dirname, "../src/data"),
+        hooks: path.resolve(import.meta.dirname, "../../packages/ui/src/hooks"),
+        icons: path.resolve(import.meta.dirname, "../../packages/ui/src/icons"),
+         images: path.resolve(import.meta.dirname, "../../packages/ui/src/images"),
+         layout: path.resolve(import.meta.dirname, "../../packages/ui/src/components/layout"),
+        primitives: path.resolve(import.meta.dirname, "../../packages/ui/src/components"),
+        utils: path.resolve(import.meta.dirname, "../../packages/ui/src/utils"),
       };
     }
 
