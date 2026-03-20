@@ -5,7 +5,6 @@ import {
   TextSubtitle, 
   Card, 
   TextHeading, 
-  Grid, 
   Text, 
   TextSmall,
   Button,
@@ -14,7 +13,6 @@ import {
 import * as Icons from "@paul/ui";
 
 export const Calendar = () => {
-  const [currentDate] = useState(new Date());
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   
   // Mock data for a month

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Flex, TextTitlePage, TextSubtitle, Button, Notification, Card, TextHeading, Text } from "@paul/ui";
+import { Flex, TextTitlePage, TextSubtitle, Button, Notification, Card, TextHeading } from "@paul/ui";
 import * as Icons from "@paul/ui";
 
 interface Toast {

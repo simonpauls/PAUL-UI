@@ -15,13 +15,6 @@ import { RolesPermissions } from "./modules/RolesPermissions";
 import { Projects } from "./modules/Projects";
 import { Flex, TextHeading, Text } from "@paul/ui";
 
-const Placeholder = ({ title }: { title: string }) => (
-  <Flex direction="column" gap="400">
-    <TextHeading>{title}</TextHeading>
-    <Text>This module is coming soon.</Text>
-  </Flex>
-);
-
 export const Dashboard = () => {
   return (
     <HashRouter>

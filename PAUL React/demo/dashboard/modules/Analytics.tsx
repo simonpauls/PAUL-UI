@@ -1,6 +1,5 @@
 import React from "react";
 import { Flex, TextTitlePage, TextSubtitle, Card, TextHeading, Grid, TextSmall } from "@paul/ui";
-import * as Icons from "@paul/ui";
 
 export const Analytics = () => {
   return (
